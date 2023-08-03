@@ -1,0 +1,474 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
+
+html {
+
+}
+
+body {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /*font-size: 2rem;*/
+    line-height: 1.7;
+    color: #777;
+   
+}
+
+/*------------------------------ HOME PAGE css -------------------------------*/
+.mdl-layout__header-row .mdl-navigation__link {
+    /*color: #fff!important;*/
+    line-height: 36px !important;
+}
+.header-color {
+    background: none !important;
+    background-color: #000;
+    background-image: linear-gradient(to left, rgba(198, 66, 110, 0.7), rgba(221,214,243, 0.7)), url(img/white-ceramic-cup-on-saucer-near-gold-colored-analog-watch-1251086.jpg);
+}
+
+.header-text {
+    text-decoration: none!important;
+    color: #fff!important;
+}
+
+.mdl-navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    position: relative;
+  }
+  
+  a:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff; /* Change color as needed */
+    animation: underlineExpand 0.2s ease-out;
+  }
+  
+  /* Animation keyframes */
+  @keyframes underlineExpand {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+.home-grid {
+    background: #642B73; /* fallback for old browsers */
+    background-image: linear-gradient(to left, rgba(198, 66, 110, 0.7), rgba(221,214,243, 0.7)), url(img/white-ceramic-cup-on-saucer-near-gold-colored-analog-watch-1251086.jpg);
+    background-size: cover;
+    background-position: left;
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95vh;
+    margin-top: -10vh;
+    padding-top: 10rem;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.captions {
+  /*position: absolute;
+  top:40%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+  width: 50%;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif !important;
+  color: white;
+    padding-top: 1rem;
+    text-transform: none;
+    padding: 4rem;
+    margin: auto;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.main-caption {
+    width: 70%;
+    font-size: 8rem;
+    font-weight: 300;
+    letter-spacing: .5rem;
+    text-align: left;
+    line-height: 0.8 !important;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+.main-caption__top {
+    margin-bottom: 0px;
+}
+
+.main-caption__bottom {
+    margin-top: 0px;
+}
+
+.sub-caption {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: .05rem;
+}
+
+.sub-caption p {
+    font-size: 1.2rem;
+}
+
+.sub-caption-1 {
+    display: inline-block;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+.sub-caption-2 {
+    display: inline-block;
+    padding: 0 1rem 0 1rem;
+}
+.sub-caption-3 {
+    display: inline-block;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+.social-links a {
+    display: inline-block;
+    color: white;
+    font-size: 1.37rem;
+    font-weight: 530;
+    text-align: center;
+    border: solid white 2.5px;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 0.7rem 1.1rem;
+    margin: auto;
+}
+    .social-links a:hover {
+        transform: scale(1.01);
+        box-shadow: 0 3px 3px rgba(219,112,147,.4);
+    }
+
+/**-----------------------------Projects Page-----------------------------**/
+.project-page {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     margin: 0 auto;
+    padding: 2rem;
+}
+
+.project {
+   
+    
+    /*margin: 0 auto;*/
+    background-color: pink;
+}
+
+
+/*--------------------------- CONTACT PAGE css ---------------------------*/
+/*.contact-body{
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.contact-grid{
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 550px;
+  background: white;
+  color: black;
+  margin-bottom: 20px;
+} 
+
+.contact-grid h2{
+  font-family: 'Anton', sans-serif;
+}
+
+.contact-grid p{
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+}
+
+.contact-grid hr{
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-list i{
+  font-size: 66px;
+  padding-right: 5rem;
+}*/
+
+.contact__div{
+  color:#6f430a;
+  font-size: 2.1rem;
+  line-height: 1.1;
+  justify-content: center;
+  align-items: center;
+  background-color: #DFC8B3;
+  background-image: url('img/citrus-delicious-food-35063.jpg');
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.contact__div p{
+  font-size: 1rem;
+  font: bold;
+}
+
+.contact__div--body{
+  margin: auto;
+  height: 100%;
+  padding: 3%;
+  position: relative;
+  display: block;
+  box-shadow:  0rem .6rem 0rem rgba(0, 0, 0, 0.2);
+}
+
+.text-center {
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__form {
+  margin: auto;
+  padding: 4%;
+  border: .13rem solid #6f430a;
+  border-radius: 20px;
+  box-shadow:  0rem .6rem .9rem rgba(0, 0, 0, 0.2);
+  width: 40%;
+  background: none;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.form__input {
+  border: 1.5px solid #b37728;
+  background-color: #fff3f37a;
+  width: 250px;
+  border-radius: 5px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  font-weight: 300;
+}
+
+.form__input--name {
+  display: inline-block;
+  width: 48% !important;
+}
+
+.form__input--firstname {
+  margin: 0 2% 2% 0;
+}
+
+.form__input--lastname {
+  margin: 0 0 2% 2%;
+}
+
+.form__input--email {
+  display: block;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.form__input--message {
+  display: block;
+  margin: 0 auto 20px auto;
+  height: 10rem;
+  width: 100% !important;
+}
+
+.alt-login {
+  width: 80%;
+  height: 3em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.alt-login div {
+  width: 47.5%;
+  height: 90%;
+  border-radius: 0.25em;
+  background-color: black;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* .facebook {background-image: url("../icons/facebook.png");} */
+
+input {
+    border:#6f430a;
+    border: 1px;
+    width: 80%;
+    border-radius: 0.25em;
+    text-align: center;
+    padding: 2em;
+    font-size: 0.75em;
+}
+
+input:focus {
+    outline-color: #b3782b;
+}
+
+.submit__btn {
+    margin: auto;
+    background-color: #FFFFFF;
+    transition: 0.5s;
+    border-radius: 0.25em;
+    border: .12rem solid #6f430a !important;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: rgb(207, 151, 247) !important;
+    padding: 1.6% 7%;
+    text-align: center;
+}
+
+.submit__btn:hover { transform: scale(1.10);}
+
+
+/*------------------------------------ RESUME -------------------------------------*/
+.resume-right-col{
+  background: #27221f;
+  color: white;
+  margin-top: 0px;
+  padding: 2em 1em;
+  text-align: left;
+}
+
+
+/*-------------------------- NEW CONTACT PAGE CSS ------------------------*/
+
+.contact-page {
+   margin: 0 auto;
+   padding: 2rem;
+   background-color: rgb(207, 151, 247);
+}
+
+.u-center-text {
+    text-align: center;
+    background-color:#fff;
+}
+
+.u-margin-bottom-medium {
+    margin-bottom: 5rem;
+}
+
+.contact-page__heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    color: rgba(100,43,115, 0.7);
+    /* background-image: linear-gradient(to left, rgba(198, 66, 110, 0.7), rgba(221,214,243, 0.7));
+    background-image: linear-gradient(to right, rgba(100,43,115, 0.7), rgba(198, 66, 110, 0.7)); */
+    -webkit-background-clip: text;
+    /* color: transparent; */
+    letter-spacing: .2rem;
+    padding: 2rem;
+    border: 2px solid rgba(100,43,115, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 .5rem 1rem rgba(255, 112, 4, 0.1);
+    transition-property: all .2s;
+}
+
+.contact-page__text {
+    margin: 0 auto;
+    position: relative;
+}
+    
+
+.contact-page__box {
+    position: relative;
+    display: inline-block;
+    padding-left: 6rem;
+    margin-bottom: 2rem;
+}
+
+
