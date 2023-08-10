@@ -49,11 +49,11 @@ body {
     color: black;
 }
 
-a:hover {
+.header-links:hover {
     position: relative;
   }
   
-  a:hover::after {
+  .header-links:hover::after {
     content: "";
     position: absolute;
     bottom: -5px;
@@ -97,12 +97,12 @@ a:hover {
     min-height: 100%;
 }
 
-.captions {
-  /*position: absolute;
-  top:40%;
-  left: 50%;
-  transform: translate(-50%, -50%);*/
+.home-grid__content {
   width: 50%;
+  margin: auto;
+}
+
+.captions {
   text-align: left;
   font-family: 'Montserrat', sans-serif !important;
   color: white;
@@ -160,7 +160,7 @@ a:hover {
 }
 
 .main-caption {
-    width: 70%;
+    /* width: 70%; */
     font-size: 8rem;
     font-weight: 300;
     letter-spacing: .5rem;
@@ -189,9 +189,32 @@ a:hover {
 
 .sub-caption p {
     font-size: 1.2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.1em solid white;
+    animation: typing 3s steps(40, end) infinite, blink-caret 0.75s step-end infinite;
 }
 
-.sub-caption-1 {
+@keyframes typing {
+  from {
+    width: 0; /* Start with 0 width */
+  }
+  to {
+    width: 100%; /* Reach 100% width at the end of the animation */
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+/* .sub-caption-1 {
     display: inline-block;
     animation-name: moveInLeft;
     animation-duration: 2s;
@@ -206,6 +229,12 @@ a:hover {
     animation-name: moveInRight;
     animation-duration: 2s;
     animation-timing-function: ease-out;
+} */
+
+.social-links {
+  /* width: 50%; */
+  text-align: left;
+  margin-left: 4rem;
 }
 
 .social-links a {
@@ -216,70 +245,38 @@ a:hover {
     text-align: center;
     border: solid white 2.5px;
     border-radius: 3px;
-    text-decoration: none;
+    text-decoration: none !important;
     padding: 0.7rem 1.1rem;
     margin: auto;
 }
     .social-links a:hover {
-        transform: scale(1.01);
-        box-shadow: 0 3px 3px rgba(219,112,147,.4);
+        transform: scale(1.01) !important;
+        box-shadow: 0 3px 3px rgba(219,112,147,.4) !important;
     }
 
 /**-----------------------------Projects Page-----------------------------**/
 .project-page {
      display: grid;
      grid-template-columns: 1fr 1fr;
-     margin: 0 auto;
+     margin: auto;
     padding: 2rem;
 }
 
 .project {
-   
-    
-    /*margin: 0 auto;*/
-    background-color: pink;
+  background: #FFF2A0 !important;
+  box-shadow: 0 .6rem 1rem rgba(0, 0, 0, 0.2);
+  width: 20rem;
+  transition: transform .3s;
+  margin-bottom: 5%;
 }
 
+.project:hover {
+  box-shadow: 0rem .6rem 1rem rgba(0, 0, 0, 0.4);
+  transform: translateY(-.2rem);
+}
 
 /*--------------------------- CONTACT PAGE css ---------------------------*/
-/*.contact-body{
-  margin: auto;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  padding-top: 2em;
-}
 
-.contact-grid{
-  text-align: center;
-  justify-content: center;
-  width: 80%;
-  height: 550px;
-  background: white;
-  color: black;
-  margin-bottom: 20px;
-} 
-
-.contact-grid h2{
-  font-family: 'Anton', sans-serif;
-}
-
-.contact-grid p{
-  font-family: 'Oxygen', sans-serif;
-  font-weight: bold;
-}
-
-.contact-grid hr{
-  border-top: 5px dotted black;
-  width: 50%;
-  margin: auto;
-}
-
-.contact-list i{
-  font-size: 66px;
-  padding-right: 5rem;
-}*/
 
 .contact__div{
   color:#6f430a;

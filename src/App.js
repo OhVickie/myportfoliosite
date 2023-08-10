@@ -12,11 +12,11 @@ function App() {
         <Header className="header-color" 
         title={<Link className="header-text" to= "/">My Portfolio</Link>}
          scroll>
-            <Navigation>
+            <Navigation >
              
-                <Link to="/Resume">Resume</Link>
-                <Link to="/Projects">Projects</Link>
-                <Link to="/Contact">Contact</Link>
+                <Link to="/Resume" className='header-links'>Resume</Link>
+                <Link to="/Projects" className='header-links'>Projects</Link>
+                <Link to="/Contact" className='header-links'>Contact</Link>
             </Navigation>
         </Header>
         <Drawer title={<Link className="header-text" to= "/">My Portfolio</Link>}>
