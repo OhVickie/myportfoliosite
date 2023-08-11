@@ -256,16 +256,19 @@ body {
 
 /**-----------------------------Projects Page-----------------------------**/
 .project-page {
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     margin: auto;
-    padding: 2rem;
+  display: grid;
+  grid-template-columns: 20% 20%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #007bff;
 }
 
 .project {
+  display: grid;
+  grid-template-columns: 20% 20%;
   background: #FFF2A0 !important;
   box-shadow: 0 .6rem 1rem rgba(0, 0, 0, 0.2);
-  width: 20rem;
+  width: 50%;
   transition: transform .3s;
   margin-bottom: 5%;
 }
@@ -273,6 +276,11 @@ body {
 .project:hover {
   box-shadow: 0rem .6rem 1rem rgba(0, 0, 0, 0.4);
   transform: translateY(-.2rem);
+}
+
+.card-img {
+  width: 100%;
+  object-fit: cover;
 }
 
 /*--------------------------- CONTACT PAGE css ---------------------------*/
