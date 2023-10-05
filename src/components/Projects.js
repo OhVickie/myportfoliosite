@@ -11,10 +11,14 @@ class Projects extends Component {
 	//}
 	render() {
 		return (
-			<div classname="project-page">
-				<SingleProjectItem cardImage = {img1} cardName = "Project 1"/>
-				<SingleProjectItem cardImage = {img1} cardName = "Project 2"/>
-				<SingleProjectItem cardImage = {img1} cardName = "Project 3"/>
+			<div className="project-page">
+				<h1 className='project-page__heading'>PORTFOLIO</h1>
+				<div>
+					<SingleProjectItem cardImage={img1} cardTitle="Project 1" cardLink="View" />
+					<SingleProjectItem cardImage={img1} cardTitle="Project 2" cardLink="View" />
+					<SingleProjectItem cardImage={img1} cardTitle="Project 3" cardLink="View" />
+				</div>
+
 			</div>
 			
 		);

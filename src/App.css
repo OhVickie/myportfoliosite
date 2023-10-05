@@ -70,13 +70,13 @@ body {
       transform: scaleX(0);
     }
     to {
-      transform: scaleX(1);
+      transform: scaleX(.8);
     }
   }
 
 .home-grid {
     background: #642B73; /* fallback for old browsers */
-    background-image: linear-gradient(to left, rgba(198, 66, 110, 0.7), rgba(221,214,243, 0.7)), url(img/white-ceramic-cup-on-saucer-near-gold-colored-analog-watch-1251086.jpg);
+    /* background-image: linear-gradient(to left, rgba(198, 66, 110, 0.7), rgba(221,214,243, 0.7)), url(img/white-ceramic-cup-on-saucer-near-gold-colored-analog-watch-1251086.jpg); */
     background-size: cover;
     background-position: left;
     text-align: center;
@@ -161,7 +161,7 @@ body {
 
 .main-caption {
     /* width: 70%; */
-    font-size: 8rem;
+    /* font-size: 8rem; */
     font-weight: 300;
     letter-spacing: .5rem;
     text-align: left;
@@ -172,11 +172,15 @@ body {
 }
 
 .main-caption__top {
+    font-size: 2rem;
     margin-bottom: 0px;
+    font-weight: 400;
 }
 
 .main-caption__bottom {
     margin-top: 0px;
+    font-size: 4rem;
+    font-weight: 600;
 }
 
 .sub-caption {
@@ -192,7 +196,7 @@ body {
     overflow: hidden;
     white-space: nowrap;
     border-right: 0.1em solid white;
-    animation: typing 3s steps(40, end) infinite, blink-caret 0.75s step-end infinite;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -244,9 +248,9 @@ body {
     font-weight: 530;
     text-align: center;
     border: solid white 2.5px;
-    border-radius: 3px;
+    border-radius: 1rem;
     text-decoration: none !important;
-    padding: 0.7rem 1.1rem;
+    padding: 0.7rem 3rem;
     margin: auto;
 }
     .social-links a:hover {
@@ -256,37 +260,77 @@ body {
 
 /**-----------------------------Projects Page-----------------------------**/
 .project-page {
-  display: grid;
-  grid-template-columns: 20% 20%;
   margin: 0 auto;
+  width: 100vw;
+  max-width: 65rem;
+  min-height: 100vh;
+  background: #007bff;
+  /* grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr; */
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 2rem;
-  background-color: #007bff;
+ 
 }
 
 .project {
-  display: grid;
-  grid-template-columns: 20% 20%;
-  background: #FFF2A0 !important;
+  display: block;
+  /* display: flex; */
+  /* flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; */
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  /* background: #FFF2A0 !important; */
   box-shadow: 0 .6rem 1rem rgba(0, 0, 0, 0.2);
-  width: 50%;
+  width: 29vw;
+  max-width: 65rem;
   transition: transform .3s;
   margin-bottom: 5%;
+  padding: 2rem 0;
+}
+
+.project-page__heading {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
 }
 
 .project:hover {
   box-shadow: 0rem .6rem 1rem rgba(0, 0, 0, 0.4);
-  transform: translateY(-.2rem);
+  transform: translateY(-.1rem);
 }
 
 .card-img {
-  width: 100%;
+  height: 20rem;
   object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.card-link-btn {
+  background: white;
+  border-radius: 1rem;
+  padding: .8rem 2rem;
+}
+
+.card-link-btn:hover {
+  background: greenyellow;
+  transform: scaleX(1.01);
 }
 
 /*--------------------------- CONTACT PAGE css ---------------------------*/
 
 
 .contact__div{
+  
   color:#6f430a;
   font-size: 2.1rem;
   line-height: 1.1;
@@ -317,13 +361,18 @@ body {
   align-items: center;
 }
 
+.contact-page {
+  width: 100vw;
+  max-width: 65rem;
+}
+
 .contact__form {
   margin: auto;
   padding: 4%;
   border: .13rem solid #6f430a;
-  border-radius: 20px;
+  border-radius: 1rem;
   box-shadow:  0rem .6rem .9rem rgba(0, 0, 0, 0.2);
-  width: 40%;
+  width: 70%;
   background: none;
   color: #FFFFFF;
   text-align: center;
@@ -427,6 +476,39 @@ input:focus {
   text-align: left;
 }
 
+.resume-page {
+  margin: 0 auto;
+  text-align: left;
+  max-width: 65rem;
+  width: 100vw;
+}
+
+.resume-page h1, h2 {
+  text-align: center;
+}
+
+.resume-page__heading {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.resume-section {
+  max-width: 65rem;
+  width: 60vw;
+  background: #27221f;
+  color: white;
+  margin: 1rem 0rem;
+  padding: 2rem 1rem;
+  border-radius: .5rem;
+  box-shadow: 0 .6rem .7rem rgba(0, 0, 0, 0.2);
+}
+
+.resume-section-1 {
+  text-align: center;
+}
 
 /*-------------------------- NEW CONTACT PAGE CSS ------------------------*/
 
@@ -446,7 +528,7 @@ input:focus {
 }
 
 .contact-page__heading {
-    font-size: 2rem;
+    font-size: 4rem;
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
@@ -457,9 +539,9 @@ input:focus {
     /* color: transparent; */
     letter-spacing: .2rem;
     padding: 2rem;
-    border: 2px solid rgba(100,43,115, 0.7);
-    border-radius: 10px;
-    box-shadow: 0 .5rem 1rem rgba(255, 112, 4, 0.1);
+    /* border: 2px solid rgba(100,43,115, 0.7); */
+    /* border-radius: 10px;
+    box-shadow: 0 .5rem 1rem rgba(255, 112, 4, 0.1); */
     transition-property: all .2s;
 }
 

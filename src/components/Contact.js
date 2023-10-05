@@ -72,7 +72,7 @@ function Contact(props) {
 						</div>
 
 					</form>
-
+					<img></img>
 
 				</div>
 

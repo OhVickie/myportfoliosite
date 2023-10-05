@@ -8,14 +8,14 @@ class Home extends Component {
                     <div className='captions'>
                         <div className="main-caption">
                             <h1 className="main-caption__top">Hello,</h1>
-                            <h1 className="main-caption__bottom">my name is Victory</h1>
+                            <h1 className="main-caption__bottom">I'm <span>Victory.</span></h1>
                         </div>
                         <div className="sub-caption">
                             <h4 >
                                 An upcoming front end developer and web designer
                             </h4>
-                            <p> I love beautiful things and have a strong sense for aesthetics and interactions and so pursuing a part of software development
-                                that was related to this just made sense to me. </p>
+                            <p > <span>I love beautiful things and have a strong sense for aesthetics and interactions and so pursuing a part of software development
+                                that was related to this just made sense to me.</span></p>
 
                         </div>
                     </div>
