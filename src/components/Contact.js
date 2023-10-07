@@ -2,6 +2,7 @@ import React, { Component, useRef } from 'react';
 import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
 import Nav from './nav';
 import emailjs from '@emailjs/browser';
+import OfficeImg from '../img/office-space.jpg';
 
 
 function Contact(props) {
@@ -26,13 +27,15 @@ function Contact(props) {
 	return (
 
 		<div className="contact-page">
-			<div className="u-margin-bottom-medium">
+			{/* <div className="u-margin-bottom-medium"> */}
+			<div >
 				<h2 className="contact-page__heading">
 					Let's Connect
 				</h2>
 			</div>
 
 			<div className="contact-page__text">
+				{/* <img className="contact-img" src={OfficeImg}></img> */}
 
 				<div className="contact__form text-center">
 

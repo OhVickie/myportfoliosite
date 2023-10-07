@@ -111,7 +111,7 @@ class Resume extends Component {
 			// 		</Cell>
 			// 	</Grid>
 			// </div>
-			<div className="resume-page">
+			<div id="resume-page">
 				<h1 className="resume-page__heading">Resume</h1>
 				<div className="resume-section resume-section-1">
 					<h2> Victory Esim </h2>
@@ -193,19 +193,49 @@ class Resume extends Component {
 				</div>
 
 				{/********************Skills Section********************/}
-				<div className="resume-section resume-section-5">
-			
+				<div className="resume-section">
+				
 					<h2>Software Skills/Technologies</h2>
-					<Skills skill="JavaScript" />
-					<Skills skill="HTML/CSS/SASS" />
-					<Skills skill="React" />
-					<Skills skill="Bootstrap"/>
-					<Skills skill="Git" />
-					<Skills skill="Java" />
-					<Skills skill="UX Prototyping"  />
-					<Skills skill="Wireframing" />
-					<Skills skill="Adobe Photoshop" />
-					<Skills skill="Adobe XD" />
+
+					<span className="resume-section-5">
+						<Skills skill="JavaScript" />
+					</span>
+					<span className="resume-section-5">
+						<Skills skill="HTML/CSS/SASS" />
+					</span>
+					<span className="resume-section-5">
+						<Skills skill="React" />
+					</span>
+
+					<span className="resume-section-5">
+						<Skills skill="Bootstrap" />
+					</span>
+
+					<span className="resume-section-5">
+						<Skills skill="Git" />
+					</span>
+
+					<span className="resume-section-5">
+						<Skills skill="Java" />
+					</span>
+
+					<span className="resume-section-5">
+						<Skills skill="UX Prototyping" />
+					</span>
+
+					<span className="resume-section-5">
+						<Skills skill="Wireframing" />
+					</span>
+
+					<span className="resume-section-5">
+						<Skills skill="Adobe Photoshop" />
+					</span>
+
+					<span className="resume-section-5">
+						<Skills skill="Adobe XD" />
+					</span>
+					
+					
 				</div>
 					
 			</div>
